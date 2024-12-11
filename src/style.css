@@ -12,6 +12,19 @@ body {
 
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    width: clamp(7rem,15rem, 20rem);
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+li {
+    marker: none;
+}
+
 #app {
     background-image: url('./assets/images/luca-bravo-desk-unsplash.jpg');
     background-size: cover;
@@ -90,13 +103,4 @@ body {
     cursor: pointer;
     text-decoration: underline;
     text-shadow: rgb(255, 255, 255) 0 0 9px;
-}
-
-#sideNav {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 15rem;
-    background-color: #8E8B82;
 }

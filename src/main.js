@@ -1,26 +1,31 @@
 import './style.css'
 
 
-function setContent() {
+
+
+function createNavBar(){
+    const contentPane = document.getElementById('contentPane');
+    if(contentPane.innerText === ''){
+        const navBarBackground = document.createElement('nav')
+        const navList = document.createElement('ul')
+        navList.id = 'navLinkList'
+        navBarBackground.id = 'sideNavBar'
+        contentPane.appendChild(navBarBackground)
+        navBarBackground.appendChild(navList)
+    }
+    
+}
+
+function populateNavbar(){
+    createNavBar()
     const navLinks = ['Home', 'Projects', 'Reminders', 'Calendar']
-    if (document.getElementById('contentPane').innerText === '') {
-        const count = 0;
-        const contentPane = document.getElementById('contentPane')
-        const navBar = document.createElement('div')
-        navBar.id = 'sideNav'
-        contentPane.appendChild(navBar)
-        const navLinkList = document.createElement('ul')
-        navLinkList.id = 'navLinks'
-        navBar.appendChild(navLinkList)
-
-
-        for (let link in navLinks) {
-            const links = document.createElement('a')
-
-            links.setAttribute('href', '#' + count)
-            links.textContent = `${link}`
-            navLinkList.append(links)
-        }
+    const list = document.getElementById('navLinkList')
+    for (let link in navLinks){
+        const liEle = document.createElement('li')
+        liEle.setAttribute('id', `navLink${link}`)
+        liEle.setAttribute('class', 'navLinks')
+        liEle.innerText = navLinks[link]
+        list.appendChild(liEle)
 
     }
 }
@@ -43,7 +48,7 @@ function newUserOverlay() {
     newUserList.addEventListener('click', (e) => {
         contentPane.replaceChildren('')
         contentPane.style.backgroundColor = 'transparent'
-        setContent()
+        populateNavbar()
 
     })
 }
