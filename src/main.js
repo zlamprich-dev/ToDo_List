@@ -22,10 +22,16 @@ function populateNavbar(){
     const list = document.getElementById('navLinkList')
     for (let link in navLinks){
         const liEle = document.createElement('li')
+        const aHref = document.createElement('a')
+
+
         liEle.setAttribute('id', `navLink${link}`)
         liEle.setAttribute('class', 'navLinks')
-        liEle.innerText = navLinks[link]
         list.appendChild(liEle)
+
+        aHref.setAttribute('href', `#${link}`)
+        aHref.innerText = navLinks[link]
+        liEle.appendChild(aHref)
 
     }
 }

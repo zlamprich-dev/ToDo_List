@@ -8,22 +8,42 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-size: 1rem;
 
 }
 
 nav {
     display: flex;
     flex-direction: column;
-    width: clamp(7rem,15rem, 20rem);
+    width: clamp(1vw,10rem, 10rem);
     height: 100%;
-    background-color: black;
+    background-color: #897764;
     color: white;
 }
 
-li {
-    marker: none;
+ul {
+
+    padding: 0;
+    font-family: oswaldExtraLight, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: flex;
+    line-height: clamp(5rem, 15vh, 10rem);
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+    text-shadow: rgb(255, 255, 255) 0 0 3px;
+}
+
+
 
 #app {
     background-image: url('./assets/images/luca-bravo-desk-unsplash.jpg');
