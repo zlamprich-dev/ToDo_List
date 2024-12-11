@@ -21,22 +21,16 @@ body {
 }
 
 #topNav {
-    font-family: oswaldExtraLight;
+    font-family: oswaldExtraLight, serif;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 14vh;
     background-color: #191a1a;
     width: 100%;
     gap: 0.5rem;
 
-}
-
-#navLinks {
-    width: 35%;
-    height: 100%;
-    background-color: #fcfcfc;
 }
 
 #textContent {
@@ -51,15 +45,49 @@ body {
     font-size: clamp(2rem, calc(0rem + 5.333vw), 4rem);
     letter-spacing: 0.6rem;
     color: #f1f1f1;
-    margin: auto;
-    margin-bottom: 5px;
+    margin: auto auto 5px;
     line-height: 1;
 }
 
 #slogan {
     font-size: clamp(1rem, calc(0rem + 2.667vw), 2rem);
-    color: white;
-    margin: auto;
-    margin-top: 0;
+    color: #f1f1f1;
+    margin: 0 auto auto;
     line-height: 1;
+}
+
+#contentPane {
+    align-content: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 26, 26, 0.93);
+}
+
+#userPrompt {
+    width: 45%;
+    margin: 5rem auto 0;
+    font-style: italic;
+    text-align: center;
+    font-family: oswaldExtraLight, serif;
+    font-size: 24px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+#newUserList {
+    margin: 5% auto auto;
+    font-family: oswaldExtraLight, serif;
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+
+}
+
+#newUserList:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: rgb(255, 255, 255) 0 0 9px;
 }
