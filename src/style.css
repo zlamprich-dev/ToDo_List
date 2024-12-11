@@ -7,7 +7,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     font-size: 1rem;
 
 }
@@ -26,7 +26,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 14vh;
+    height: 15vh;
     background-color: #191a1a;
     width: 100%;
     gap: 0.5rem;
@@ -62,6 +62,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    height: 85vh;
     background-color: rgba(25, 26, 26, 0.93);
 }
 
@@ -71,7 +72,7 @@ body {
     font-style: italic;
     text-align: center;
     font-family: oswaldExtraLight, serif;
-    font-size: 24px;
+    font-size: clamp(1rem, calc(0rem + 5.333vw), 2rem);
     color: whitesmoke;
     letter-spacing: 1px;
 }
@@ -80,7 +81,7 @@ body {
     margin: 5% auto auto;
     font-family: oswaldExtraLight, serif;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(1rem, calc(0rem + 5.333vw), 2rem);
     color: whitesmoke;
 
 }
@@ -89,4 +90,13 @@ body {
     cursor: pointer;
     text-decoration: underline;
     text-shadow: rgb(255, 255, 255) 0 0 9px;
+}
+
+#sideNav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 15rem;
+    background-color: #8E8B82;
 }
