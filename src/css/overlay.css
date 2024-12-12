@@ -1,0 +1,27 @@
+
+
+#userPrompt {
+    width: 45%;
+    margin: 5rem auto 0;
+    font-style: italic;
+    text-align: center;
+    font-family: oswaldExtraLight, serif;
+    font-size: clamp(1rem, calc(0rem + 5.333vw), 2rem);
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+#newUserList {
+    margin: 5% auto auto;
+    font-family: oswaldExtraLight, serif;
+    text-align: center;
+    font-size: clamp(1rem, calc(0rem + 5.333vw), 2rem);
+    color: whitesmoke;
+
+}
+
+#newUserList:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-shadow: rgb(255, 255, 255) 0 0 9px;
+}
