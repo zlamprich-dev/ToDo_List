@@ -1,4 +1,4 @@
-import {populateNavbar} from "./navContent.js";
+
 
 
 function newUserOverlay() {
@@ -19,9 +19,7 @@ function newUserOverlay() {
     newUserList.addEventListener('click', (e) => {
         contentPane.replaceChildren('')
         contentPane.style.backgroundColor = 'transparent'
-        populateNavbar()
+
 
     })
 }
-
-newUserOverlay()
